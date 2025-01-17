@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg';
 import CssBaseline from "@mui/material/CssBaseline";
 import './App.css';
 import TodoList from './todoList';
+import Navbar from './Navbar';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +13,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <h1>todos</h1>
+      <Navbar />
       <TodoList />
     </>
   );
